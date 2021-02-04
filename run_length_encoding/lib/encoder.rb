@@ -32,4 +32,16 @@ class Encoder
           end
           return true
       end  
+
+    def is_all_first_letter?(string)
+       first_letter = string[0]
+       string_to_list(string).each do |letter|
+        if letter != first_letter
+          return false
+        end
+      end
+      return true
+  end  
+
+
 end
