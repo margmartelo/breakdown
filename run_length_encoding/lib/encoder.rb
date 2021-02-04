@@ -23,4 +23,13 @@ class Encoder
         end
         return true
     end  
+
+    def is_all_this_letter?(string, x)
+        string_to_list(string).each do |letter|
+            if letter != x
+              return false
+            end
+          end
+          return true
+      end  
 end
