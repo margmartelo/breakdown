@@ -8,6 +8,11 @@ class Encoder
     end 
 
     def get_first_letter_and_length(string)
-      "#{string[0]}" + "#{string.length}"
+       get_first_letter(string) + get_length(string).to_s
     end
 end
+
+
+# a = string[0]
+# b = string.length
+# a + b
