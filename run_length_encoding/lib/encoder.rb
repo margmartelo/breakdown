@@ -14,4 +14,13 @@ class Encoder
     def string_to_list(string)
       string.split("")
     end
+
+    def is_all_as?(string)
+        string_to_list(string).each do |letter|
+          if letter != "a"
+            return false
+          end
+        end
+        return true
+    end  
 end
